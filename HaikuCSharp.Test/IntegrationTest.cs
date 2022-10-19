@@ -106,6 +106,18 @@ namespace HaikuCSharp.Test
                 File.WriteAllLines($"{workingDir}\\test8.txt", test);
             }
 
+            // should fail
+            if (!File.Exists($"{workingDir}\\test9.txt"))
+            {
+                var test = new List<string>()
+                {
+                    "sfsdf one two three four five ",
+                    "fffff",
+                    "hhhhh"
+                };
+                File.WriteAllLines($"{workingDir}\\test9.txt", test);
+            }
+
             var result = HaikuCounter.CountHaikus();
             Assert.AreEqual(result, 3);
         }

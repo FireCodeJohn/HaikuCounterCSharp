@@ -65,10 +65,11 @@ namespace HaikuCSharp
                 syllables++;
             }
 
-            // throw exception if no syllables found
+            // log message if no syllables found
             if (syllables <= 0)
             {
-                throw new Exception($"Error: Got {syllables} syllables for the word {word}");
+                Console.WriteLine($"Warning: Got {syllables} syllables for the word {word}.  Ignoring it... Is the word valid?");
+                Console.WriteLine();
             }
 
             return syllables;
