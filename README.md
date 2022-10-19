@@ -1,5 +1,5 @@
 # HaikuCounterCSharp
-Counts the number of Hiakus in the input file(s). 
+Counts the number of Hiakus in the input file(s).  
 Simply run the executable in HaikuCounterCSharp/HaikuCSharp/bin/Debug/net6.0/HaikuCSharp.exe
 
 The program gets .txt files from the working directory as input.  
