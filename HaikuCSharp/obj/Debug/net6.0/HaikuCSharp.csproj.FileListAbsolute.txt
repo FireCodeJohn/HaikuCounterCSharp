@@ -1,0 +1,15 @@
+C:\Users\John.Nelson\source\repos\HaikuCSharp\HaikuCSharp\bin\Debug\net6.0\HaikuCSharp.exe
+C:\Users\John.Nelson\source\repos\HaikuCSharp\HaikuCSharp\bin\Debug\net6.0\HaikuCSharp.deps.json
+C:\Users\John.Nelson\source\repos\HaikuCSharp\HaikuCSharp\bin\Debug\net6.0\HaikuCSharp.runtimeconfig.json
+C:\Users\John.Nelson\source\repos\HaikuCSharp\HaikuCSharp\bin\Debug\net6.0\HaikuCSharp.dll
+C:\Users\John.Nelson\source\repos\HaikuCSharp\HaikuCSharp\bin\Debug\net6.0\HaikuCSharp.pdb
+C:\Users\John.Nelson\source\repos\HaikuCSharp\HaikuCSharp\obj\Debug\net6.0\HaikuCSharp.csproj.AssemblyReference.cache
+C:\Users\John.Nelson\source\repos\HaikuCSharp\HaikuCSharp\obj\Debug\net6.0\HaikuCSharp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\John.Nelson\source\repos\HaikuCSharp\HaikuCSharp\obj\Debug\net6.0\HaikuCSharp.AssemblyInfoInputs.cache
+C:\Users\John.Nelson\source\repos\HaikuCSharp\HaikuCSharp\obj\Debug\net6.0\HaikuCSharp.AssemblyInfo.cs
+C:\Users\John.Nelson\source\repos\HaikuCSharp\HaikuCSharp\obj\Debug\net6.0\HaikuCSharp.csproj.CoreCompileInputs.cache
+C:\Users\John.Nelson\source\repos\HaikuCSharp\HaikuCSharp\obj\Debug\net6.0\HaikuCSharp.dll
+C:\Users\John.Nelson\source\repos\HaikuCSharp\HaikuCSharp\obj\Debug\net6.0\refint\HaikuCSharp.dll
+C:\Users\John.Nelson\source\repos\HaikuCSharp\HaikuCSharp\obj\Debug\net6.0\HaikuCSharp.pdb
+C:\Users\John.Nelson\source\repos\HaikuCSharp\HaikuCSharp\obj\Debug\net6.0\HaikuCSharp.genruntimeconfig.cache
+C:\Users\John.Nelson\source\repos\HaikuCSharp\HaikuCSharp\obj\Debug\net6.0\ref\HaikuCSharp.dll

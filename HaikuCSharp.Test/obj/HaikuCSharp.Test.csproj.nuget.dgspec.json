@@ -1,0 +1,132 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\John.Nelson\\source\\repos\\HaikuCSharp\\HaikuCSharp.Test\\HaikuCSharp.Test.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\John.Nelson\\source\\repos\\HaikuCSharp\\HaikuCSharp.Test\\HaikuCSharp.Test.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\John.Nelson\\source\\repos\\HaikuCSharp\\HaikuCSharp.Test\\HaikuCSharp.Test.csproj",
+        "projectName": "HaikuCSharp.Test",
+        "projectPath": "C:\\Users\\John.Nelson\\source\\repos\\HaikuCSharp\\HaikuCSharp.Test\\HaikuCSharp.Test.csproj",
+        "packagesPath": "C:\\Users\\John.Nelson\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\John.Nelson\\source\\repos\\HaikuCSharp\\HaikuCSharp.Test\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\John.Nelson\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.lkclouddev.com/nuget/Default/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\John.Nelson\\source\\repos\\HaikuCSharp\\HaikuCSharp\\HaikuCSharp.csproj": {
+                "projectPath": "C:\\Users\\John.Nelson\\source\\repos\\HaikuCSharp\\HaikuCSharp\\HaikuCSharp.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "NUnit": {
+              "target": "Package",
+              "version": "[3.13.3, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[4.2.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\John.Nelson\\source\\repos\\HaikuCSharp\\HaikuCSharp\\HaikuCSharp.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\John.Nelson\\source\\repos\\HaikuCSharp\\HaikuCSharp\\HaikuCSharp.csproj",
+        "projectName": "HaikuCSharp",
+        "projectPath": "C:\\Users\\John.Nelson\\source\\repos\\HaikuCSharp\\HaikuCSharp\\HaikuCSharp.csproj",
+        "packagesPath": "C:\\Users\\John.Nelson\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\John.Nelson\\source\\repos\\HaikuCSharp\\HaikuCSharp\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\John.Nelson\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.lkclouddev.com/nuget/Default/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
