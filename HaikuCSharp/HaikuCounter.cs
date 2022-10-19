@@ -20,56 +20,70 @@ namespace HaikuCSharp
             var haikuCount = 0;
             foreach (var haikuFile in haikuFiles)
             {
-                // read the lines and remove/ignore any blank lines
-                var lines = File.ReadAllLines(haikuFile).ToList();
-                lines = lines.Where(line => !string.IsNullOrWhiteSpace(line)).ToList();
-
-                // Verify line count
-                if (lines.Count != 3)
+                try
                 {
-                    Console.WriteLine($"Text in file {haikuFile} is not a Haiku because it has {lines.Count} lines.");
+                    // read the lines and remove/ignore any blank lines
+                    var lines = File.ReadAllLines(haikuFile).ToList();
+                    lines = lines.Where(line => !string.IsNullOrWhiteSpace(line)).ToList();
+
+                    // Verify line count
+                    if (lines.Count != 3)
+                    {
+                        Console.WriteLine(
+                            $"Text in file {haikuFile} is not a Haiku because it has {lines.Count} lines.");
+                        Console.WriteLine();
+                        continue;
+                    }
+
+                    // Verify syllables for line 1
+                    var syllables = SyllableCounter.GetSyllablesPerLine(lines[0]);
+                    if (syllables != 5)
+                    {
+                        Console.WriteLine(
+                            $"Text in file {haikuFile} is not a Haiku because line 1 has {syllables} syllables.");
+                        Console.WriteLine($"Line: {lines[0]}");
+                        Console.WriteLine();
+                        continue;
+                    }
+
+                    // Verify syllables for line 2
+                    syllables = SyllableCounter.GetSyllablesPerLine(lines[1]);
+                    if (syllables != 7)
+                    {
+                        Console.WriteLine(
+                            $"Text in file {haikuFile} is not a Haiku because line 2 has {syllables} syllables.");
+                        Console.WriteLine($"Line: {lines[1]}");
+                        Console.WriteLine();
+                        continue;
+                    }
+
+                    // Verify syllables for line 3
+                    syllables = SyllableCounter.GetSyllablesPerLine(lines[2]);
+                    if (syllables != 5)
+                    {
+                        Console.WriteLine(
+                            $"Text in file {haikuFile} is not a Haiku because line 3 has {syllables} syllables.");
+                        Console.WriteLine($"Line: {lines[2]}");
+                        Console.WriteLine();
+                        continue;
+                    }
+
+                    // log that file is haiku and increase count
+                    Console.WriteLine($"Text in file {haikuFile} is a Haiku!  Haiku:");
+                    foreach (var line in lines)
+                    {
+                        Console.WriteLine(line);
+                    }
+
                     Console.WriteLine();
-                    continue;
+                    haikuCount++;
                 }
-
-                // Verify syllables for line 1
-                var syllables = SyllableCounter.GetSyllablesPerLine(lines[0]);
-                if (syllables != 5)
+                catch (Exception e)
                 {
-                    Console.WriteLine($"Text in file {haikuFile} is not a Haiku because line 1 has {syllables} syllables.");
-                    Console.WriteLine($"Line: {lines[0]}");
+                    Console.WriteLine($"{e.Message}");
+                    Console.WriteLine($"Skipping file {haikuFile} due to above error.");
                     Console.WriteLine();
-                    continue;
                 }
-
-                // Verify syllables for line 2
-                syllables = SyllableCounter.GetSyllablesPerLine(lines[1]);
-                if (syllables != 7)
-                {
-                    Console.WriteLine($"Text in file {haikuFile} is not a Haiku because line 2 has {syllables} syllables.");
-                    Console.WriteLine($"Line: {lines[1]}");
-                    Console.WriteLine();
-                    continue;
-                }
-
-                // Verify syllables for line 3
-                syllables = SyllableCounter.GetSyllablesPerLine(lines[2]);
-                if (syllables != 5)
-                {
-                    Console.WriteLine($"Text in file {haikuFile} is not a Haiku because line 3 has {syllables} syllables.");
-                    Console.WriteLine($"Line: {lines[2]}");
-                    Console.WriteLine();
-                    continue;
-                }
-
-                // log that file is haiku and increase count
-                Console.WriteLine($"Text in file {haikuFile} is a Haiku!  Haiku:");
-                foreach (var line in lines)
-                {
-                    Console.WriteLine(line);
-                }
-                Console.WriteLine();
-                haikuCount++;
             }
 
             Console.WriteLine($"The working directory had {haikuCount} haikus in it out of {haikuFiles.Length} files");

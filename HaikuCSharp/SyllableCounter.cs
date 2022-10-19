@@ -68,8 +68,7 @@ namespace HaikuCSharp
             // log message if no syllables found
             if (syllables <= 0)
             {
-                Console.WriteLine($"Warning: Got {syllables} syllables for the word {word}.  Ignoring it... Is the word valid?");
-                Console.WriteLine();
+                throw new Exception($"Error: Got {syllables} syllables for the word {word}. Is the word valid? An Invalid word means the text is not a haiku");
             }
 
             return syllables;
