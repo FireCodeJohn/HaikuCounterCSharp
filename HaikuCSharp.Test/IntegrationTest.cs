@@ -94,8 +94,20 @@ namespace HaikuCSharp.Test
                 File.WriteAllLines($"{workingDir}\\test7.txt", test);
             }
 
+            // should pass
+            if (!File.Exists($"{workingDir}\\test8.txt"))
+            {
+                var test = new List<string>()
+                {
+                    "ouchie Im hurt now",
+                    "owie aye I like a ale",
+                    "The foam very nice"
+                };
+                File.WriteAllLines($"{workingDir}\\test8.txt", test);
+            }
+
             var result = HaikuCounter.CountHaikus();
-            Assert.AreEqual(result, 2);
+            Assert.AreEqual(result, 3);
         }
     }
 }
